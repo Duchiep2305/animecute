@@ -1,0 +1,75 @@
+@keyframes hear
+{
+    50%
+    {
+        transform: translate(-50%, -100%) scale(3,3);
+    }
+
+    80%
+    {
+         transform: translate(-50%, -50%) scale(1,1);
+    }
+}
+
+
+.hear
+{
+    width: 200px;
+    height: 200px;
+    top:50%;
+    left:50%;
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation-name: hear;
+    animation-duration: 1.5s;
+    animation-iteration-count:infinite;
+    animation-fill-mode: backwards;
+}
+
+
+.hear div
+{
+    background:red;
+    width: 71px;
+    height: 126px;
+    top:40%;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.left
+{
+    left:45px;
+    transform: rotate(330deg);
+}
+.right
+{
+    right:45px;
+    transform: rotate(30deg);
+}
+
+.img
+{
+    width: 1600px;
+    height: 700px;
+    display: inline-block;
+}
+
+#imgleft 
+{
+    background-image: url('./nam.jpg');
+    width: 622px;
+    height: 600px;
+    background-size: cover;
+}
+#imgright
+{
+    background-image: url('./nu.jpg');
+    width: 615px;
+    height: 600px;
+    margin-left: auto;
+    background-size: cover;
+}
